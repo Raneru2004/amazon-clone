@@ -1,0 +1,78 @@
+li{
+    list-style-type: none;
+}
+.no-cursor{
+    cursor: not-allowed;
+}
+.bm-burger-button{
+  display: none;
+}
+@media(max-width:686px){
+
+  #react-burger-menu-btn{
+    transform: translate(-18px, -23px);
+  }
+  .bm-item {
+    padding-left: 30px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #000000;
+    transition: all 300ms ease;
+    width: 100%;
+  }
+  
+  .bm-burger-button {
+    display: flex;
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+  
+  .bm-burger-bars {
+    background:white;
+    transition: all 300ms ease;
+    transform: translate(-50%,-380%);
+  }
+  .bm-item:hover {
+    background-color: #c6c6c6;
+  }
+  
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .bm-cross {
+    background: #000000;
+  }
+  
+  .bm-menu {
+    background: white;
+    padding: 2.5em 0;
+    font-size: 1.15em;
+    overflow: none;
+      -ms-overflow-style: none;  
+      scrollbar-width: none;
+  }
+  .bm-menu::-webkit-scrollbar { 
+    display: none;
+  }
+  
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  .bm-item-list {
+    color: #000000;
+    width: 272px;
+  }
+  
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
